@@ -18,13 +18,13 @@ const reducer = (state = initialState, action) => {
   if (action.type === 'ADD') {
     return {
       ...state,
-      counter: state.counter + 5
+      counter: state.counter + action.payload
     }
   } 
   if (action.type === 'SUBSTRACT') {
     return {
       ...state,
-      counter: state.counter - 5
+      counter: state.counter - action.payload
     }
   } 
   return state;
