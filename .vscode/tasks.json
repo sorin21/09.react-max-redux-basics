@@ -1,0 +1,23 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "args": [ "-w", "-p", ".", "--noEmit" ],
+  "isBackground": true,
+  "command": "shell",
+  "reveal": "always",
+  "tasks": [
+    {
+      "label": "Configure npm errors",
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": "$tsc-watch",
+    },
+    {
+      "label": "Configure eslint",
+      "command": "cmd",
+      "args": ["eslint ."],
+      "problemMatcher": "$eslint-stylish"
+    }
+  ]
+}
