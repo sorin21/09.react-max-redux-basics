@@ -11,13 +11,22 @@
       "label": "Configure npm errors",
       "type": "npm",
       "script": "build",
-      "problemMatcher": "$tsc-watch",
+      "problemMatcher": "$tsc-watch"
     },
     {
       "label": "Configure eslint",
       "command": "cmd",
-      "args": ["eslint ."],
+      "args": [
+        "eslint ."
+      ],
       "problemMatcher": "$eslint-stylish"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [
+        "$jshint"
+      ]
     }
   ]
 }
